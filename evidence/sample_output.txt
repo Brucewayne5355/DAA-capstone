@@ -1,0 +1,28 @@
+COURIER PLAN
+============================================================
+Vehicle capacity: 18 kg | Loaded: 18 kg | Priority value: 33
+
+Priority queue (deadline, then priority):
+  P-103 → C   7 kg  priority 10  deadline 09:30
+  P-106 → F   2 kg  priority  6  deadline 09:45
+  P-101 → A   5 kg  priority  9  deadline 10:00
+  P-105 → E   6 kg  priority  7  deadline 10:30
+  P-102 → B   4 kg  priority  8  deadline 11:00
+  P-107 → G   8 kg  priority  9  deadline 11:30
+  P-104 → D   3 kg  priority  5  deadline 12:00
+  P-108 → H   5 kg  priority  4  deadline 13:00
+
+Selected parcels (0/1 knapsack):
+  P-103 → C (7 kg, value 10)
+  P-106 → F (2 kg, value 6)
+  P-101 → A (5 kg, value 9)
+  P-102 → B (4 kg, value 8)
+
+Delivery route (nearest-neighbor over shortest paths):
+  DEPOT → A → B → C → F → DEPOT
+Total distance: 20 km
+
+Timing (single run; machine dependent):
+  priority_sort_ms: 0.0035 ms
+  knapsack_dp_ms: 0.0187 ms
+  shortest_paths_and_route_ms: 0.0419 ms

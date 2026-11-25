@@ -1,0 +1,19 @@
+{
+  "depot": "DEPOT",
+  "capacity": 18,
+  "parcels": [
+    {"id":"P-101","destination":"A","weight":5,"priority":9,"deadline":"10:00"},
+    {"id":"P-102","destination":"B","weight":4,"priority":8,"deadline":"11:00"},
+    {"id":"P-103","destination":"C","weight":7,"priority":10,"deadline":"09:30"},
+    {"id":"P-104","destination":"D","weight":3,"priority":5,"deadline":"12:00"},
+    {"id":"P-105","destination":"E","weight":6,"priority":7,"deadline":"10:30"},
+    {"id":"P-106","destination":"F","weight":2,"priority":6,"deadline":"09:45"},
+    {"id":"P-107","destination":"G","weight":8,"priority":9,"deadline":"11:30"},
+    {"id":"P-108","destination":"H","weight":5,"priority":4,"deadline":"13:00"}
+  ],
+  "roads": [
+    ["DEPOT","A",4],["DEPOT","B",6],["DEPOT","C",8],["DEPOT","D",7],["DEPOT","E",9],["DEPOT","F",5],["DEPOT","G",11],["DEPOT","H",10],
+    ["A","B",3],["A","C",5],["A","D",6],["A","F",4],["B","C",2],["B","D",4],["B","E",5],["C","D",3],["C","F",6],
+    ["D","E",2],["D","F",5],["D","G",6],["E","G",3],["E","H",4],["F","G",7],["F","H",6],["G","H",2]
+  ]
+}

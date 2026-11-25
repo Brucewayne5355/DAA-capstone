@@ -1,0 +1,168 @@
+{
+  "ranked": [
+    {
+      "id": "P-103",
+      "destination": "C",
+      "weight": 7,
+      "priority": 10,
+      "deadline": "09:30",
+      "deadline_min": 570
+    },
+    {
+      "id": "P-106",
+      "destination": "F",
+      "weight": 2,
+      "priority": 6,
+      "deadline": "09:45",
+      "deadline_min": 585
+    },
+    {
+      "id": "P-101",
+      "destination": "A",
+      "weight": 5,
+      "priority": 9,
+      "deadline": "10:00",
+      "deadline_min": 600
+    },
+    {
+      "id": "P-105",
+      "destination": "E",
+      "weight": 6,
+      "priority": 7,
+      "deadline": "10:30",
+      "deadline_min": 630
+    },
+    {
+      "id": "P-102",
+      "destination": "B",
+      "weight": 4,
+      "priority": 8,
+      "deadline": "11:00",
+      "deadline_min": 660
+    },
+    {
+      "id": "P-107",
+      "destination": "G",
+      "weight": 8,
+      "priority": 9,
+      "deadline": "11:30",
+      "deadline_min": 690
+    },
+    {
+      "id": "P-104",
+      "destination": "D",
+      "weight": 3,
+      "priority": 5,
+      "deadline": "12:00",
+      "deadline_min": 720
+    },
+    {
+      "id": "P-108",
+      "destination": "H",
+      "weight": 5,
+      "priority": 4,
+      "deadline": "13:00",
+      "deadline_min": 780
+    }
+  ],
+  "selected": [
+    {
+      "id": "P-103",
+      "destination": "C",
+      "weight": 7,
+      "priority": 10,
+      "deadline": "09:30",
+      "deadline_min": 570
+    },
+    {
+      "id": "P-106",
+      "destination": "F",
+      "weight": 2,
+      "priority": 6,
+      "deadline": "09:45",
+      "deadline_min": 585
+    },
+    {
+      "id": "P-101",
+      "destination": "A",
+      "weight": 5,
+      "priority": 9,
+      "deadline": "10:00",
+      "deadline_min": 600
+    },
+    {
+      "id": "P-102",
+      "destination": "B",
+      "weight": 4,
+      "priority": 8,
+      "deadline": "11:00",
+      "deadline_min": 660
+    }
+  ],
+  "capacity": 18,
+  "used_weight": 18,
+  "total_priority": 33,
+  "route": {
+    "stops": [
+      "DEPOT",
+      "A",
+      "B",
+      "C",
+      "F",
+      "DEPOT"
+    ],
+    "legs": [
+      {
+        "from": "DEPOT",
+        "to": "A",
+        "distance": 4,
+        "path": [
+          "DEPOT",
+          "A"
+        ]
+      },
+      {
+        "from": "A",
+        "to": "B",
+        "distance": 3,
+        "path": [
+          "A",
+          "B"
+        ]
+      },
+      {
+        "from": "B",
+        "to": "C",
+        "distance": 2,
+        "path": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "from": "C",
+        "to": "F",
+        "distance": 6,
+        "path": [
+          "C",
+          "F"
+        ]
+      },
+      {
+        "from": "F",
+        "to": "DEPOT",
+        "distance": 5,
+        "path": [
+          "F",
+          "DEPOT"
+        ]
+      }
+    ],
+    "distance": 20
+  },
+  "timings_ms": {
+    "priority_sort_ms": 0.002291999408043921,
+    "knapsack_dp_ms": 0.01645900192670524,
+    "shortest_paths_and_route_ms": 0.03554200520738959
+  }
+}
